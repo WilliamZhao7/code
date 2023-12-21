@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index-final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login System</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class=" form-wrapper">
+            <form id="formid" class="login-form">
+                <div id="login-form-text-title" class="form-title">
+                    <h1>
+                        GoldenTank Management System
+                    </h1>
+                </div>
+
+                <div class="text-input account" id="usr-account">
+                    <label for="account">
+                        <i class="fa fa-user icon"></i>
+                        <input type="email" id="account" class="user-input" placeholder="Email Account">
+                    </label>
+
+                </div>
+
+                <div class="text-input password" id="usr-password">
+                    <label for="password">
+                        <i class="fa fa-lock icon"></i>
+                        <input type="password" id="password" class="user-input" placeholder="Password">
+                    </label>
+                </div>
+
+                <div class="text-input verify" id="usr-verification">
+                    <label for="verification">
+                        <i class="fa fa-shield icon"></i>
+                        <input type="text" id="verification" class="user-input" placeholder="5-digit Code"
+                            maxlength="5">
+                    </label>
+
+                    <div class="vercode-wrapper">
+                        <img class="vercode" src="./images/VerificationCode.png">
+                        <div class="change-code"></div>
+                    </div>
+                </div>
+
+                <div class="choice-input remember-password" id="remember-password">
+                    <label for="remember-password">
+                        <input type="checkbox" id="remember-password" class="user-input">
+                        Remember
+                    </label>
+
+                    <a href="#" class="forget-password">Forgot Passweord？</a>
+                </div>
+
+                <div class="submit-input">
+                    <input type="submit" class="user-input btn-login" value="Log In">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+form,
+body,
+i,
+label,
+input,
+span,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+    font: 1.5em bold black;
+    font-variant: slashed-zero;
+}
+
+i {
+    margin-left: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    /* Background take up cover the whole viewport */
+    background: url(./images/inventory.jpg) no-repeat center center;
+    background-size: cover;
+    position: fixed;
+
+    /* Fix on top left of viewport */
+    top: 0;
+    left: 0;
+    /* Take up the whole viewport */
+    height: 100%;
+    width: 100%;
+    /* Prevent the content overflow from the container;
+     also prevent any default padding/margin settings by browser*/
+    background-size: cover;
+
+    display: grid;
+    place-items: center;
+}
+
+
+/*  Form Component*/
+.form-wrapper {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 455px;
+    /* height: 40%; */
+}
+
+.login-form {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.form-title {
+    width: 80%;
+    height: 24%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.account {
+    margin-top: 32px;
+}
+
+
+
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit] {
+    width: 90%;
+    height: 32px;
+    border: hidden;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-inline-start: 10px;
+}
+
+
+
+input[type=submit] {
+    width: 80%;
+    cursor: pointer;
+}
+
+#login-form-text-title h1 {
+    text-align: center;
+}
+
+
+.text-input label {
+    display: inline-block;
+    height: 32px;
+    width: 80%;
+    background-color: #beaca1;
+}
+
+
+/* Verificatin Code Input */
+
+.verify {
+    position: relative;
+    overflow: hidden;
+}
+
+.vercode-wrapper {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    right: 10%;
+    height: 32px;
+    width: 30%;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.vercode {
+    float: left;
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
+.change-code {
+    float: right;
+    width: 40%;
+    height: 100%;
+    background-image: url(./images/retry.jpeg);
+    background-repeat: no-repeat;
+}
+
+/* Remember Password */
+.remember-password {
+    width: 80%;
+    height: 32px;
+    margin: auto;
+}
+
+.remember-password label {
+    float: left;
+}
+
+.remember-password a {
+    float: right;
+}
+
+/* Input */
+
+.submit-input {
+    height: 32px;
+}
+
+.text-input,
+.submit-input,
+.choice-input {
+    margin-bottom: 15px;
+}
+
+/* Login button */
+
+.btn-login {
+    background-color: #4193f7;
+    color: white;
+
+}
+
+.btn-login:hover {
+    background-color: rebeccapurple;
+}

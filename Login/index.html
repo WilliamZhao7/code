@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <link rel="stylesheet" href="./index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+
+    <!-- <div class="login-window"> -->
+    <form class="login-form" method="post">
+        <p id="login-form-title">Golden Tank 管理系统</p>
+
+
+        <div class="account-box input-container">
+
+            <label for="account icon">
+                <i class="fa fa-car icon"></i>
+            </label>
+
+            <input type="text" class="text-input" id="account" name="account" placeholder="abc@gmail.com">
+        </div>
+
+        <div class="password-box input-container">
+            <label for="password icon">
+                <i class="fa fa-car icon"></i>
+            </label>
+            <input type="text" class="text-input" id="password" name="password" placeholder="password">
+        </div>
+
+        <div class="verfication-box input-container flex-container">
+
+            <div id="verification-box-input">
+                <label for="verfication-code" id="verfication-code-label">
+                    <i class="fa fa-car icon"></i>
+                </label>
+                <input type="text" class="text-input verification-code" id="verification-code" name="verification-code"
+                    placeholder="验证码">
+            </div>
+
+
+            <div id="verification-code-block">
+                <a href="#">
+                    <!-- <img id="verification-code-example" src="./images/verification-example.jpeg"> -->
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div id="check-box">
+            <input type="checkbox" class="check-box" id="remember-password" name="remember-password"
+                value="remember-password">
+            <label id="remember-password-label" for="remember-password">记住密码</label>
+        </div>
+
+        <button type="submit" class="login-btn">登录</button>
+
+    </form>
+    <!-- </div> -->
+
+    <!-- </div> -->
+</body>
+
+</html>

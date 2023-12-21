@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* Image from: https: //unsplash.com/@wwarby */
+    background-image: url(./images/william-warby-ld4wZGqlLF4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+
+.container {
+    width: 10%;
+    height: 40%;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px red solid;
+}
+
+#login-form-title {
+    text-align: center;
+}
+
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    border: 1px red solid;
+}
+
+.login-window {
+    width: 300px;
+    max-width: 1200px;
+    height: 250px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+
+}
+
+
+
+
+
+.text-input {
+    width: 60%;
+    margin-bottom: 10px;
+    border: 1px black solid;
+    border-left: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /* display: inline-block; */
+}
+
+label {
+    border: 1px black solid;
+    border-right: hidden;
+}
+
+#remember-password-label {
+    border: hidden;
+    font-size: 1em;
+}
+
+
+
+.login-btn {
+    background-color: blue;
+    color: white;
+    display: block;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+}
+
+
+
+image {
+    height: 20%;
+}
+
+#verification-code-block {
+    display: inline-block;
+    height: 100%;
+}
+
+/* .verification-code {
+    border: 2px black solid;
+}
+
+#verfication-code-example {
+    margin-left: 50%;
+} */

@@ -1,0 +1,80 @@
+html,
+body {
+    /* remove default format */
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /* Image from: https: //unsplash.com/@wwarby */
+    background-image: url(./images/william-warby-ld4wZGqlLF4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+
+.login-form {
+    /* height: 30v; */
+
+    height: 250px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+
+.login-form input {
+    padding: 1.5px 2px 1.5px 2px;
+    border: 1px black solid;
+    border-radius: 0 5px 5px 0;
+    border-left: hidden;
+}
+
+.login-form label {
+    background-color: rgb(88, 102, 113);
+    border-bottom: 2px rgb(88, 102, 113) solid;
+    border-radius: 5px 0 0 5px;
+    border-right: hidden;
+}
+
+.input-container {
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/verification-example.jpeg);
+    background-attachment: fixed;
+}
+
+/* #verification-box-input {
+    display: inline-block;
+} */
+
+#verification-code-block {
+    float: right;
+    width: 60px;
+    height: 30px;
+    /* background-color: red; */
+}
+
+/* img {
+    height: 30px;
+    width: 60px;
+} */

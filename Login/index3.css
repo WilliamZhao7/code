@@ -1,0 +1,56 @@
+html,
+body {
+    /* remove default format */
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /* Image from: https: //unsplash.com/@wwarby */
+    background-image: url(./images/william-warby-ld4wZGqlLF4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+p {
+    line-height: 2em;
+}
+
+a {
+    height: 30px;
+    width: 10;
+}
+
+input {
+    width: 60%;
+
+}
+
+
+.login-form input {
+    max-height: 30px;
+    padding: 1.5px 2px 1.5px 2px;
+    border: 1px black solid;
+    border-radius: 0 5px 5px 0;
+    border-left: hidden;
+}
+
+.login-form label {
+    width: 10%;
+    max-height: 30px;
+    background-color: rgb(88, 102, 113);
+    border-bottom: 2px rgb(88, 102, 113) solid;
+    border-radius: 5px 0 0 5px;
+    border-right: hidden;
+}
+
+
+
+img {
+    text-align: center;
+    height: 30px;
+    width: auto;
+}
