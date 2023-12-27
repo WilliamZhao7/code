@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1>Hello, {{name}}</h1>
+    </div>
+
+    <script type="text/javascript">
+        const v = new Vue({
+            // 第一种写法
+            el:'#root',
+
+            // data第一种写法：对象式
+            // data:{
+            //     name:'GoldenTank'
+            // }
+
+            // data第二种写法：函数式
+            data:function(){ //如果是箭头函数的话对象会变成window，现在是Vue
+                console.log('@@@', this) //list是Vue实例对象
+                return{
+                    name:'GoldenTank'
+                }
+            }
+        })
+        console.log(v)
+        setTimeout(() => {
+            // 使用mount挂载元素 - el的另一种写法
+            v.$mount('#root')}, 1000);
+
+        // v.$mount('#root')
+    </script>
+    
+</body>
+</html>

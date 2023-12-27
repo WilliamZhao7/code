@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回顾Object.defineproperty方法</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        let number = 18
+        let person = {
+            name:'Bob',
+            sex:'Male',
+            // age:number,
+        };
+
+        //  使用这个方法会让age不可枚举，遍历
+        Object.defineProperty(person, 'age', {
+            // value:18,
+            // enumerable:true, //控制属性是否可以枚举，默认值是false
+            // writable:true, //控制属性是否可以被修改，默认false
+            // configurable:true, // 控制属性是否可以被删除，默认false
+
+            get(){
+                console.log('read age')
+                return number
+            },
+
+            set(value){
+                console.log('change age to', value)
+                number = value   
+            }
+
+        })
+        console.log(person);
+    </script>
+</body>
+</html>

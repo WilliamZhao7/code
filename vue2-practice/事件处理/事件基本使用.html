@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+
+<body>
+        <button v-on:click="show" class="button1" >v-on 不传参不缩写</button>
+        <button @click="show($event, 66)" class="button2" >v-on 传参缩写</button>
+        
+</body>
+
+<script type="text/javascript">
+    new Vue({
+        el:'.button1',
+        methods: {
+            show(event, number) {
+                alert("哈哈");
+            }
+            
+        }
+    })
+
+    new Vue({
+            el: '.button2',
+            methods: {
+                show(event, number) {
+                    alert("哈哈" + number);
+                }
+
+            }
+        })
+</script>
+
+</html>

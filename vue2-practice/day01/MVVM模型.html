@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+     <!-- MVVM 模型
+        Model（模型-data）-View（视图）-ViewModel(Vue 对象)
+        1. data中的所有属性，最后都出现在vm身上
+        2. vm身上所有属性 及vue原型上的所有属性，在vue模版中都可以直接使用
+     -->
+
+    <div id="root">
+        <h1>{{name}}</h1>
+        <h1>{{address}}</h1>
+        <h1>{{a+1}}</h1>
+        <!-- <h1>{{_c}}</h1> -->
+
+    </div>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false;
+
+            const vm = new Vue({
+                el: '#root',
+                data: {
+                    name: 'GoldenTank',
+                    address: 'Canberra',
+                    a: 1
+                }
+            });
+            console.log(vm);
+    </script>
+        
+
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <!-- 插值语法 - 解析标签体内容 -->
+        <h1>Hello {{name}}</h1>
+        <!-- v-bind指令语法(解析标签 - 涵盖范围包括：标签属性，标签体内容，绑定事件等)：v-bind:属性='js表达式'，缩写为：:属性='js表达式' --> 
+        <!-- v-model：value 指令语法是双向绑定语句，只限于用户输入类型的标签，可以动态更新data值 可以缩写为v-model：属性=‘js表达式’-->
+        <a :href="url">To Baidu</a> 
+        <label>双向数据绑定</label>
+        <input type="text" v-model:x="name">
+
+
+    </div>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+
+        new Vue({
+            el: '#root',
+            data: {
+                name:'GoldenTank',
+                url: 'https://www.baidu.com' 
+            }
+        })
+    </script>
+
+   
+</body>
+</html>
