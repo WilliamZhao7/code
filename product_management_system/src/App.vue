@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+for (let i = 0; i < 9; i++) {
+  console.log(i);
+}
+</script>
 
 <template>
   <div>
