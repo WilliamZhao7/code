@@ -1,9 +1,22 @@
 import { createApp } from 'vue'
 
-import App from './App.vue'
+import App from '@/App.vue'
+//引入element插件与样式
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+//@ts-ignore忽略当前文件ts类型的检测否则有红色提示(打包会失败)
 
-createApp(App).mount('#app')
+//Element-Plus 国际化配置
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 
-for (let i = 1; i < 10; i++) {
-  i++
-}
+const app = createApp(App)
+
+// 安装Element-Plus插件
+app.use(ElementPlus, {
+  locale: zhCn,
+})
+
+app.mount('#app')
+
+
+
